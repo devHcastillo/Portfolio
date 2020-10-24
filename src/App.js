@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 
 import Particles from "react-particles-js";
 import configParticles from "./config/configParticles";
+import Navbar from "./Components/Navbar";
 
 function App() {
   // This useEffect is for relocate on #root after refresh
@@ -38,7 +39,7 @@ function App() {
           className="button"
           onClick={(e) => {
             e.preventDefault();
-            document.querySelector(".navBar").scrollIntoView({
+            document.querySelector(".header-navbar").scrollIntoView({
               behavior: "smooth",
             });
           }}
@@ -53,9 +54,7 @@ function App() {
         </a>
       </header>
 
-      <div className="navBar">
-        <p>nav bar test</p>
-      </div>
+      <Navbar />
       <div className="navBar1">
         <p>other test</p>
       </div>

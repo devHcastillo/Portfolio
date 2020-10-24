@@ -1,6 +1,7 @@
-html {
-  scroll-behavior: smooth;
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .App {
@@ -16,7 +17,7 @@ html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-bottom: -16px;
+  /* margin-bottom: -16px; */
 }
 
 .color__name {
@@ -78,4 +79,61 @@ a#button-1:hover img {
   width: 20px;
   opacity: 1;
   transform: translateX(70px);
+}
+
+/* Navbar */
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #191919;
+  font-size: 1.30em;
+  color: white;
+  border-bottom: 2px solid #0088a9;
+  position: sticky;
+
+}
+
+.nav__links {
+  list-style: none;
+  color: white;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+  
+}
+
+.nav__links li a {
+  transition:  all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+  /* text-transform: uppercase; */
+
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0,136 ,169 ,1 );
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+  color: white;
+  font-size: 0.8em;
+
+}
+
+button:hover {
+  background-color: rgba(0,136 ,169 ,0.8 );
+
 }
