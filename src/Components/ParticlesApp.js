@@ -17,7 +17,7 @@ export default class ParticlesApp extends Component {
               />
             </div>
             <header className="App-header">
-              <p disa>
+              <p >
                 Hello, I'm <span className="color__name">Heraldo Castillo</span>{" "}
                 <br></br>
                 I'm a Jr. full-stack developer

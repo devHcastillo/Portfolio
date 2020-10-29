@@ -26,7 +26,7 @@ export default class Footer extends Component {
               className="icons-footer"
               alt="icon"
               src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
-              style={{ "background-color": "transparent" }}
+              
             />
           </a>
 

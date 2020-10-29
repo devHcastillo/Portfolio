@@ -1,11 +1,31 @@
 import React, { Component } from "react";
+import emailjs from "emailjs-com";
 import emaillogo from "../email2.svg";
 
 export default class Contact extends Component {
   render() {
     const sendEmail = (e) => {
       e.preventDefault();
+      emailjs
+        .sendForm(
+          "gmail",
+          "template_jv7tayo",
+          e.target,
+          "user_YCmx7iBMOeSv1hTWXQZwK"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            e.target.reset();
+            alert("Message sent");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Try Again");
+          }
+        );
     };
+
     return (
       <>
         <h1 className="form-title">Contact Me</h1>
@@ -19,6 +39,7 @@ export default class Contact extends Component {
 
             <div className="form-container">
               <form
+                onSubmit={sendEmail}
                 className="form__group field"
                 // action="https://script.google.com/macros/s/AKfycbx70LUX-uYZ25YnzPyEb3j5ApV3pyXjiJCsI77w/exec"
                 // method="post"
@@ -46,15 +67,16 @@ export default class Contact extends Component {
                   required
                 />
 
-                <button type="submit" style={{ "font-size": "1.8em" }}>
+                {/* <button type="submit" style={{ "font-size": "1.8em" }}>
                   Send Email
-                </button>
+                </button> */}
+                <input type="submit" value="Send Message"></input>
               </form>
             </div>
           </div>
 
           <div className="right-contact-vector">
-            <img className="image-email" alt="form" src={emaillogo} />
+          
           </div>
         </div>
       </>

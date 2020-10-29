@@ -80,40 +80,40 @@ export class About extends Component {
           </div>
           <div className="test-div-right">
             <p className="margin-skills">HTML</p>
-            <div class="container ">
-              <div class="skills html">85%</div>
+            <div className="container ">
+              <div className="skills html">85%</div>
             </div>
             <p>CSS</p>
-            <div class="container">
-              <div class="skills css">50%</div>
+            <div className="container">
+              <div className="skills css">50%</div>
             </div>
             <p>JavaScript</p>
-            <div class="container">
-              <div class="skills js">70%</div>
+            <div className="container">
+              <div className="skills js">70%</div>
             </div>
             <p>React</p>
-            <div class="container">
-              <div class="skills react">62%</div>
+            <div className="container">
+              <div className="skills react">62%</div>
             </div>
             <p>Node.js</p>
-            <div class="container">
-              <div class="skills node">60%</div>
+            <div className="container">
+              <div className="skills node">60%</div>
             </div>
             <p>PHP</p>
-            <div class="container">
-              <div class="skills php">35%</div>
+            <div className="container">
+              <div className="skills php">35%</div>
             </div>
             <p>Laravel</p>
-            <div class="container">
-              <div class="skills laravel">45%</div>
+            <div className="container">
+              <div className="skills laravel">45%</div>
             </div>
             <p>Java</p>
-            <div class="container">
-              <div class="skills java">60%</div>
+            <div className="container">
+              <div className="skills java">60%</div>
             </div>
             <p>Flutter</p>
-            <div class="container">
-              <div class="skills flutter">20%</div>
+            <div className="container">
+              <div className="skills flutter">20%</div>
             </div>
           </div>
         </div>
