@@ -22,7 +22,7 @@
 }
 
 .color__name {
-  color: #5AD6B5;
+  color: #5ad6b5;
 }
 
 header > p {
@@ -127,7 +127,6 @@ button {
 
 button:hover {
   background-color: rgb(35%, 84%, 99%);
-
 }
 
 .about {
@@ -212,7 +211,7 @@ button:hover {
 .content-about-item {
   /* background-color: chartreuse; */
   justify-content: center;
-  font-size: 0.99em;
+  font-size: 1.03em;
   margin-top: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #616278;
@@ -236,7 +235,7 @@ button:hover {
 }
 
 .imageme-about {
-  font-size: 0.99em;
+  font-size: 1.03em;
   margin-top: 5px 2px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #616278;
@@ -374,20 +373,23 @@ button:hover {
   width: 700px;
   height: 700px;
 }
+/* .image-email:hover {
+  transform: scale(1.1);
+} */
 
 .container-footer {
   height: 175px;
   width: 100%;
   margin-top: 100px;
   background-color: #282c22;
-  border-top: 2px solid #0088a9;;
+  border-top: 2px solid #0088a9;
 }
 
 .icons {
   height: 100px;
   width: 50%;
   margin: 0 auto;
- display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -401,13 +403,17 @@ button:hover {
   background-color: white;
 }
 
-.footer-author {
-  margin-top: 15px;
-text-align: center;
-font-size: 1.3em;
-color: white;
+.icons-footer:hover {
+  transform: scale(1.2);
 }
 
-.year-color{
-  color: #5AD6B5;
+.footer-author {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+}
+
+.year-color {
+  color: #5ad6b5;
 }

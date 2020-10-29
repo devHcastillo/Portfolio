@@ -46,10 +46,7 @@ export default class Contact extends Component {
                   required
                 />
 
-                <button
-                  type="submit"
-                  style={{ "font-size": "1.8em" }}
-                >
+                <button type="submit" style={{ "font-size": "1.8em" }}>
                   Send Email
                 </button>
               </form>

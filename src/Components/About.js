@@ -6,7 +6,6 @@ export class About extends Component {
       <div className="about">
         <h1 className="about-title">About</h1>
 
-        
         <div className="top-about">
           <div className="top-about-item">
             <img
@@ -55,9 +54,6 @@ export class About extends Component {
           </div>
         </div>
 
-
-
-
         <div className="container-about">
           <div className="test-div-left">
             <img className="imageme-about-picture" alt="me" src={me} />
@@ -71,10 +67,16 @@ export class About extends Component {
               technologies.
             </p>
             <p className="imageme-about">
-             <a className="a-color-hithub" href="https://github.com/devHcastillo"  target="_blank" rel="noreferrer" alt="GitHub Profile">Check my projects in Github</a> 
+              <a
+                className="a-color-hithub"
+                href="https://github.com/devHcastillo"
+                target="_blank"
+                rel="noreferrer"
+                alt="GitHub Profile"
+              >
+                Check my projects in Github
+              </a>
             </p>
-            
-
           </div>
           <div className="test-div-right">
             <p className="margin-skills">HTML</p>

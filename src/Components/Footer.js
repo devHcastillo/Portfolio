@@ -18,6 +18,19 @@ export default class Footer extends Component {
           </a>
 
           <a
+            href="https://github.com/devHcastillo"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="icons-footer"
+              alt="icon"
+              src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
+              style={{ "background-color": "transparent" }}
+            />
+          </a>
+
+          <a
             href="https://www.instagram.com/_stevencastillo/"
             target="_blank"
             rel="noreferrer"
