@@ -7,32 +7,55 @@ export default class Navbar extends Component {
         <nav className="sticky">
           <ul className="nav__links">
             <li>
-              <a href="home"
-               onClick={(e) => {
-              e.preventDefault();
-              document.querySelector(".App").scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-              >Home</a>
+              <a
+                href="home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(".App").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="about" 
-              onClick={(e) => {
-              e.preventDefault();
-              document.querySelector(".about").scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-              >About</a>
+              <a
+                href="about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(".about").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="portfolio">Portfolio</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(".contact-container").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                href="contact"
+              >
+                Contact
+              </a>
             </li>
             <li>
-              {" "}
-              <a className="btn-contact" href="true">
-                <button>Contact </button>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(".container-footer").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                href="social-media"
+              >
+                Social Media
               </a>
             </li>
           </ul>

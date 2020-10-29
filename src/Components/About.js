@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import me from "./me.jpeg";
+import me from "../me.jpeg";
 export class About extends Component {
   render() {
     return (
       <div className="about">
         <h1 className="about-title">About</h1>
+
+        
         <div className="top-about">
           <div className="top-about-item">
             <img
@@ -14,7 +16,7 @@ export class About extends Component {
             />
             <p className="title-about-item">Proactive</p>
             <p className="content-about-item">
-              I like to know new technologies and programming tools
+              I like to learn about new technologies and programming tools
             </p>
           </div>
 
@@ -52,6 +54,10 @@ export class About extends Component {
             </p>
           </div>
         </div>
+
+
+
+
         <div className="container-about">
           <div className="test-div-left">
             <img className="imageme-about-picture" alt="me" src={me} />
@@ -64,6 +70,11 @@ export class About extends Component {
               development, I like to learn and implement all kinds of
               technologies.
             </p>
+            <p className="imageme-about">
+             <a className="a-color-hithub" href="https://github.com/devHcastillo"  target="_blank" rel="noreferrer" alt="GitHub Profile">Check my projects in Github</a> 
+            </p>
+            
+
           </div>
           <div className="test-div-right">
             <p className="margin-skills">HTML</p>
@@ -76,23 +87,23 @@ export class About extends Component {
             </div>
             <p>JavaScript</p>
             <div class="container">
-              <div class="skills js">80%</div>
+              <div class="skills js">70%</div>
             </div>
             <p>React</p>
             <div class="container">
-              <div class="skills react">70%</div>
+              <div class="skills react">62%</div>
             </div>
             <p>Node.js</p>
             <div class="container">
-              <div class="skills node">70%</div>
+              <div class="skills node">60%</div>
             </div>
             <p>PHP</p>
             <div class="container">
-              <div class="skills php">40%</div>
+              <div class="skills php">35%</div>
             </div>
             <p>Laravel</p>
             <div class="container">
-              <div class="skills laravel">35%</div>
+              <div class="skills laravel">45%</div>
             </div>
             <p>Java</p>
             <div class="container">
