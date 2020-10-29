@@ -114,18 +114,18 @@ li > a {
   /* text-transform: uppercase; */
 }
 
-button {
-  padding: 9px 25px;
+.button-email {
+   padding: 9px 25px;
   background-color: rgb(35%, 84%, 71%);
   border: none;
   cursor: pointer;
   border-radius: 50px;
   transition: all 0.3s ease 0s;
   color: white;
-  font-size: 0.8em;
+  font-size: 1.5em; 
 }
 
-button:hover {
+.button-email:hover {
   background-color: rgb(35%, 84%, 99%);
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
-import emaillogo from "../email2.svg";
+import Swal from "sweetalert2";
 
 export default class Contact extends Component {
   render() {
@@ -17,11 +17,23 @@ export default class Contact extends Component {
           (result) => {
             console.log(result.text);
             e.target.reset();
-            alert("Message sent");
+
+            Swal.fire({
+              position: "center",
+              icon: "success",
+              title: "Message sent",
+              showConfirmButton: false,
+              timer: 1500,
+            });
           },
           (error) => {
             console.log(error.text);
-            alert("Try Again");
+            Swal.fire({
+              title: "Error!",
+              text: "Try Again!",
+              icon: "error",
+              confirmButtonText: "Close",
+            });
           }
         );
     };
@@ -70,14 +82,16 @@ export default class Contact extends Component {
                 {/* <button type="submit" style={{ "font-size": "1.8em" }}>
                   Send Email
                 </button> */}
-                <input type="submit" value="Send Message"></input>
+                <input
+                  className="button-email"
+                  type="submit"
+                  value="Send Message"
+                ></input>
               </form>
             </div>
           </div>
 
-          <div className="right-contact-vector">
-          
-          </div>
+          <div className="right-contact-vector"></div>
         </div>
       </>
     );
